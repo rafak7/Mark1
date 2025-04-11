@@ -9,10 +9,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'MARK1',
-  description: 'Transforme seu ambiente com nossos serviços profissionais de pintura. Atendemos residências e empresas com qualidade e excelência.',
-  keywords: 'pintura, pintura residencial, pintura comercial, serviços de pintura, pintores profissionais',
   icons: {
-    icon: '/images/jws-logo.jpeg',
+    icon: '/images/logo-mark1.jpeg',
   },
 };
 
