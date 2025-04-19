@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Wind, Thermometer, Wrench } from 'lucide-react';
 import './HeroSection.scss';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
@@ -74,8 +74,39 @@ export function HeroSection() {
             ))}
           </h1>
           <p className="hero-section__subtitle">
-            Serviços profissionais para dar vida aos seus ambientes
+            Especialistas em instalação e manutenção de ar condicionado, frigoríficos e sistemas de refrigeração
           </p>
+          
+          <div className="hero-section__icons">
+            <motion.div 
+              className="hero-section__icon-wrapper"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              <Wind size={32} />
+              <span>Ar Condicionado</span>
+            </motion.div>
+            <motion.div 
+              className="hero-section__icon-wrapper"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
+              <Thermometer size={32} />
+              <span>Frigoríficos</span>
+            </motion.div>
+            <motion.div 
+              className="hero-section__icon-wrapper"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.7, duration: 0.5 }}
+            >
+              <Wrench size={32} />
+              <span>Manutenção</span>
+            </motion.div>
+          </div>
+          
           <Button
             onClick={scrollToContact}
             className="hero-section__cta"

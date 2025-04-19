@@ -25,9 +25,6 @@ export function AboutSection() {
               Utilizamos as melhores técnicas e materiais do mercado para garantir um acabamento
               perfeito e duradouro em cada projeto.
             </p>
-            <a href="#contact" className="about-section__cta">
-              Entre em Contato
-            </a>
           </motion.div>
           
           <motion.div 
