@@ -190,8 +190,8 @@ export function ContactSection() {
                 <div className="flex items-center space-x-4">
                   <MapPin className="w-6 h-6 text-primary" />
                   <div>
-                    <p className="font-medium">Endereço</p>
-                    <p className="text-gray-600"></p>
+                    <p className="font-medium">CNPJ</p>
+                    <p className="text-gray-600">38.171.921/0001-90</p>
                   </div>
                 </div>
               </div>
