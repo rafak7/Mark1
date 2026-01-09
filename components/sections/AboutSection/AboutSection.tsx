@@ -9,7 +9,7 @@ export function AboutSection() {
     <section className="about-section" id="about">
       <div className="about-section__container">
         <div className="about-section__content">
-          <motion.div 
+          <motion.div
             className="about-section__text"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -17,17 +17,11 @@ export function AboutSection() {
           >
             <h2>Sobre Nós</h2>
             <p>
-              Com anos de experiência no mercado, oferecemos serviços de pintura de alta qualidade
-              para residências e estabelecimentos comerciais. Nossa equipe é comprometida com a
-              excelência e satisfação do cliente.
-            </p>
-            <p>
-              Utilizamos as melhores técnicas e materiais do mercado para garantir um acabamento
-              perfeito e duradouro em cada projeto.
+              Com anos de experiência no mercado, a Mark1 oferece soluções completas em instalação e manutenção de ar condicionado e sistemas frigoríficos. Unimos tecnologia de ponta e uma equipe altamente qualificada para garantir a máxima eficiência técnica e o conforto que o seu negócio ou residência merece.
             </p>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="about-section__image"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}

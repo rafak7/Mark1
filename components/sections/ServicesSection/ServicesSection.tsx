@@ -8,37 +8,37 @@ import { useState, useEffect } from 'react';
 
 const services = [
   {
-    icon: <Snowflake className="w-12 h-12 text-primary" />,
+    icon: <Snowflake className="w-12 h-12 text-secondary" />,
     title: 'Instalação de Ar Condicionado',
     description: 'Serviço profissional de instalação para garantir o funcionamento eficiente do seu ar condicionado.',
     details: 'Equipe técnica especializada para instalação de qualquer modelo de ar condicionado. Atendemos residências, comércios e indústrias com garantia de serviço e satisfação do cliente.'
   },
   {
-    icon: <Wrench className="w-12 h-12 text-primary" />,
+    icon: <Wrench className="w-12 h-12 text-secondary" />,
     title: 'Manutenção Preventiva',
     description: 'Evite problemas futuros com manutenções regulares e preventivas em seu sistema de climatização.',
     details: 'Planos de manutenção periódica que incluem limpeza de filtros, verificação do gás refrigerante, inspeção de componentes elétricos e mecânicos para evitar falhas e aumentar a vida útil do equipamento.'
   },
   {
-    icon: <Wind className="w-12 h-12 text-primary" />,
+    icon: <Wind className="w-12 h-12 text-secondary" />,
     title: 'Limpeza de Ar Condicionado',
     description: 'Limpeza completa para melhorar a qualidade do ar e a eficiência do aparelho.',
     details: 'Higienização completa que elimina fungos, bactérias e ácaros do sistema de ar condicionado, melhorando a qualidade do ar e prevenindo problemas respiratórios.'
   },
   {
-    icon: <Thermometer className="w-12 h-12 text-primary" />,
+    icon: <Thermometer className="w-12 h-12 text-secondary" />,
     title: 'Manutenção de Refrigeradores',
     description: 'Serviços especializados para refrigeradores comerciais e industriais, garantindo seu funcionamento ideal.',
     details: 'Manutenção de refrigeradores comerciais, câmaras frigoríficas e equipamentos de refrigeração industrial com técnicos capacitados e peças originais.'
   },
   {
-    icon: <Fan className="w-12 h-12 text-primary" />,
+    icon: <Fan className="w-12 h-12 text-secondary" />,
     title: 'Consultoria em Climatização',
     description: 'Ajuda profissional para escolher o melhor sistema de climatização para seu espaço.',
     details: 'Análise detalhada do ambiente para recomendação do sistema de climatização mais eficiente e econômico para sua necessidade, considerando fatores como tamanho, exposição solar e utilização.'
   },
   {
-    icon: <ShoppingBag className="w-12 h-12 text-primary" />,
+    icon: <ShoppingBag className="w-12 h-12 text-secondary" />,
     title: 'Venda de Equipamentos',
     description: 'Oferecemos uma variedade de modelos de ar condicionado e refrigeração para atender suas necessidades.',
     details: 'Comercialização das melhores marcas de ar condicionado, com opções de split, janela, cassete, piso-teto e VRF, além de refrigeradores comerciais e industriais com garantia estendida.'

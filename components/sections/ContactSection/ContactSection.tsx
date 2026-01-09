@@ -49,21 +49,21 @@ export function ContactSection() {
     try {
       // Formatar a mensagem para o WhatsApp
       const message = `*Nova mensagem do site*\n\n*Nome:* ${values.name}\n*Email:* ${values.email}\n*Telefone:* ${values.phone}\n\n*Mensagem:*\n${values.message}`;
-      
+
       // Codificar a mensagem para URL
       const encodedMessage = encodeURIComponent(message);
-      
+
       // Criar o link do WhatsApp
       const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodedMessage}`;
-      
+
       // Abrir o link em uma nova aba
       window.open(whatsappUrl, '_blank');
-      
+
       toast({
         title: 'Mensagem enviada!',
         description: 'Você será redirecionado para o WhatsApp para finalizar o envio.',
       });
-      
+
       form.reset();
     } catch (error) {
       toast({
@@ -174,21 +174,21 @@ export function ContactSection() {
               <h3>Informações de Contato</h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <Phone className="w-6 h-6 text-primary" />
+                  <Phone className="w-6 h-6 text-secondary" />
                   <div>
                     <p className="font-medium">Telefone</p>
                     <p className="text-gray-600">(21) 96462-6765</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <Mail className="w-6 h-6 text-primary" />
+                  <Mail className="w-6 h-6 text-secondary" />
                   <div>
                     <p className="font-medium">Email</p>
                     <p className="text-gray-600">administrativo@mark1hvac.com.br</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <MapPin className="w-6 h-6 text-primary" />
+                  <MapPin className="w-6 h-6 text-secondary" />
                   <div>
                     <p className="font-medium">CNPJ</p>
                     <p className="text-gray-600">38.171.921/0001-90</p>
