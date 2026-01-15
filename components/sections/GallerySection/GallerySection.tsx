@@ -29,6 +29,8 @@ const allImages = [
   { src: "/images/image-11.jpeg" },
   { src: "/images/image-12.jpeg" },
   { src: "/images/image-14.jpeg" },
+  { src: "/images/image-15.jpeg" },
+  { src: "/images/image-16.jpeg" },
 ];
 
 export function GallerySection() {

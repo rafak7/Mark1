@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 export function HeroSection() {
   const [imageLoaded, setImageLoaded] = useState(false);
   const text = "MARK1";
-  
+
   const letterAnimation = {
     hidden: { opacity: 0, y: 50 },
     visible: (i: number) => ({
@@ -30,19 +30,19 @@ export function HeroSection() {
   useEffect(() => {
     // Pré-carrega a imagem
     const imgLoader = new window.Image();
-    imgLoader.src = '/images/capa_mark1.jpeg';
+    imgLoader.src = '/images/mark1_banner.jpg';
     imgLoader.onload = () => setImageLoaded(true);
   }, []);
 
   return (
     <section className="hero-section">
       {/* Placeholder enquanto a imagem carrega */}
-      <div 
+      <div
         className={`hero-section__placeholder ${imageLoaded ? 'hero-section__placeholder--hidden' : ''}`}
       />
-      
-      <Image 
-        src="/images/capa_mark1.jpeg"
+
+      <Image
+        src="/images/mark1_banner.jpg"
         alt="Fundo da seção hero"
         fill
         sizes="100vw"
@@ -76,9 +76,9 @@ export function HeroSection() {
           <p className="hero-section__subtitle">
             Especialistas em instalação e manutenção de ar condicionado, frigoríficos e sistemas de refrigeração
           </p>
-          
+
           <div className="hero-section__icons">
-            <motion.div 
+            <motion.div
               className="hero-section__icon-wrapper"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -87,7 +87,7 @@ export function HeroSection() {
               <Wind size={32} />
               <span>Ar Condicionado</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="hero-section__icon-wrapper"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -96,7 +96,7 @@ export function HeroSection() {
               <Thermometer size={32} />
               <span>Frigoríficos</span>
             </motion.div>
-            <motion.div 
+            <motion.div
               className="hero-section__icon-wrapper"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -106,7 +106,7 @@ export function HeroSection() {
               <span>Manutenção</span>
             </motion.div>
           </div>
-          
+
           <Button
             onClick={scrollToContact}
             className="hero-section__cta"
@@ -114,7 +114,7 @@ export function HeroSection() {
             Solicitar Orçamento
           </Button>
         </motion.div>
-        
+
         <motion.div
           className="hero-section__scroll-icon"
           animate={{ y: [0, 10, 0] }}
